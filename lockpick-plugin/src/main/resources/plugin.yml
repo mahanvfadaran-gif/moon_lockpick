@@ -1,5 +1,20 @@
 name: MoonLockpick
-version: 1.0.0
-main: ir.mahan.lockpick.MoonLockpick
+version: '${project.version}'
+main: ir.mahan.lockpick.LockpickPlugin
 api-version: '1.20'
 author: Mahan
+softdepend: [WorldGuard, ItemsAdder, Vault]
+
+commands:
+  lockpick:
+    description: دستورات مدیریت پلاگین لاک‌پیک
+    usage: /lockpick <create|remove|give|stats|test|reload>
+    permission: lockpick.admin
+
+permissions:
+  lockpick.admin:
+    description: دسترسی به دستورات مدیریتی لاک‌پیک
+    default: op
+  lockpick.use:
+    description: اجازه استفاده از مینی‌گیم لاک‌پیک
+    default: true

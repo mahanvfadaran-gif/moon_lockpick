@@ -1,1 +1,26 @@
-# Moon Lockpick configuration
+bossbar:
+  title: "§eدر حال باز کردن قفل..."
+  color: YELLOW
+  style: SOLID
+
+session:
+  base-speed: 0.02
+  speed-increase-per-pin: 0.006
+  fail-message: "§cاشتباه بود، دوباره تلاش کن."
+  success-message: "§aقفل باز شد!"
+  cooldown-seconds: 3
+
+database:
+  file: lockpick.db
+
+# آیتم فیزیکی لاک‌پیک: یک آیتم سراسری که برای شروع مینی‌گیم لازم است.
+# با هر شکست (miss) یک واحد دوامش کم می‌شود و بعد از تمام شدن دوام، آیتم می‌شکند.
+lockpick-item:
+  material: TRIPWIRE_HOOK
+  name: "&eلاک‌پیک"
+  lore:
+    - "&7برای باز کردن قفل‌های مکانیکی استفاده کن."
+  max-uses: 5
+  uses-lore-line: "&7دوام: &f{uses}/{max}"
+  missing-message: "&cبرای باز کردن قفل باید یک لاک‌پیک سالم در دست داشته باشی."
+  break-message: "&cلاک‌پیکت شکست!"
