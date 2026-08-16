@@ -1,0 +1,5 @@
+name: MoonLockpick
+version: 1.0.0
+main: ir.mahan.lockpick.MoonLockpick
+api-version: '1.20'
+author: Mahan
