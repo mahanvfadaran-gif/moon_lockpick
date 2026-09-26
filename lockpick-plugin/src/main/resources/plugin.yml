@@ -1,5 +1,5 @@
 name: MoonLockpick
-version: '${project.version}'
+version: '1.0.0'
 main: ir.mahan.lockpick.LockpickPlugin
 api-version: '1.20'
 author: Mahan

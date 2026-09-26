@@ -4,10 +4,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class LockpickResultEvent extends Event {
-
+public class LockpickResultEvent
+extends Event {
     private static final HandlerList HANDLERS = new HandlerList();
-
     private final Player player;
     private final String lockId;
     private final boolean success;
@@ -21,22 +20,21 @@ public class LockpickResultEvent extends Event {
     }
 
     public Player getPlayer() {
-        return player;
+        return this.player;
     }
 
     public String getLockId() {
-        return lockId;
+        return this.lockId;
     }
 
     public boolean isSuccess() {
-        return success;
+        return this.success;
     }
 
     public int getAttempts() {
-        return attempts;
+        return this.attempts;
     }
 
-    @Override
     public HandlerList getHandlers() {
         return HANDLERS;
     }

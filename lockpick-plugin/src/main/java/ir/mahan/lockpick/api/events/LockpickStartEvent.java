@@ -5,10 +5,10 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class LockpickStartEvent extends Event implements Cancellable {
-
+public class LockpickStartEvent
+extends Event
+implements Cancellable {
     private static final HandlerList HANDLERS = new HandlerList();
-
     private final Player player;
     private final String lockId;
     private final double difficulty;
@@ -21,28 +21,25 @@ public class LockpickStartEvent extends Event implements Cancellable {
     }
 
     public Player getPlayer() {
-        return player;
+        return this.player;
     }
 
     public String getLockId() {
-        return lockId;
+        return this.lockId;
     }
 
     public double getDifficulty() {
-        return difficulty;
+        return this.difficulty;
     }
 
-    @Override
     public boolean isCancelled() {
-        return cancelled;
+        return this.cancelled;
     }
 
-    @Override
     public void setCancelled(boolean cancel) {
         this.cancelled = cancel;
     }
 
-    @Override
     public HandlerList getHandlers() {
         return HANDLERS;
     }
